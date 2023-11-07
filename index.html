@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Query Form</title>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="map">
+            <img class="logo" src="./logo.png" alt="">
+            <img class="agent" src="./agent.png" alt="">
+        </div>
+        <div class="contact-form">
+            <h1 class="title">Citizen Finance Customer Query</h1>
+            <h2 class="subtitle">We are here assist you. Please fill the form </h2>
+            <form
+                action="https://computing-force-1133-dev-ed.scratch.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DH30000008d3w"
+                method="POST">
+                <input type="hidden" name="orgid" value="00DH30000008d3w" />
+                <input type="hidden" name="retURL" value="https://santucodex.github.io/CitizenFinanceWebtoCase/thankyou" />
+                <div class="detail-section">
+                    <section>
+                        <label for="name">Contact Name</label><input id="name" maxlength="80" name="name" size="20"
+                            type="text" /><br />
+
+                        <label for="email">Email</label><input id="email" maxlength="80" name="email" size="20"
+                            type="text" /><br />
+
+                        <label for="phone">Phone</label><input id="phone" maxlength="40" name="phone" size="20"
+                            type="text" /><br />
+
+                        <label for="subject">Subject</label><input id="subject" maxlength="80" name="subject" size="20"
+                            type="text" /><br />
+                        <label for="description">Description</label><textarea name="description"></textarea><br />
+                    </section>
+
+                    <section>
+                        <label for="reason">Case Reason</label><select id="reason" name="reason">
+                            <option value="">--None--</option>
+                            <option value="Account and Transaction Issues">
+                                Account and Transaction Issues
+                            </option>
+                            <option value="Loan and Credit Issues">
+                                Loan and Credit Issues
+                            </option>
+                            <option value="Fraud and Security">Fraud and Security</option>
+                            <option value="Account Maintenance and Inquiries">
+                                Account Maintenance and Inquiries
+                            </option>
+                            <option value="Online Banking and ATM Issues">
+                                Online Banking and ATM Issues
+                            </option>
+                            <option value="Investment and Real Estate">
+                                Investment and Real Estate
+                            </option>
+                            <option value="Other">Other</option>
+                        </select><br />
+
+                        <label for="priority">Priority</label><select id="priority" name="priority">
+                            <option value="">--None--</option>
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                            <option value="Critical">Critical</option>
+                            <option value="Informational">Informational</option>
+                        </select><br />
+
+                        <label for="recordType">Case Record Type</label><select id="recordType" name="recordType">
+                            <option value="">--None--</option>
+                            <option value="012H3000000HkNU">Banking Finance</option>
+                            <option value="012H3000000HkNV">Enquiry</option>
+                            <option value="012H3000000HkNW">Fraud And Security</option>
+                            <option value="012H3000000HkNX">Other</option>
+                            <option value="012H3000000HkNY">Technical Problem</option>
+                        </select><br />
+
+                        Feedback Detail:<input id="00NH3000000vd75" maxlength="255" name="00NH3000000vd75" size="20"
+                            type="text" /><br />
+                    </section>
+                </div>
+
+                <input class="btn-send" type="submit" name="submit" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
