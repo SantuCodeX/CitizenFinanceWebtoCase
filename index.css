@@ -1,10 +1,11 @@
 @import 'https://fonts.googleapis.com/css?family=Libre+Franklin:400,700';
+
 html,
 body {
-  background-image: url(./bg1.jpg);
-  font-family: "Libre Franklin", sans-serif;
-  background-position: center;
-  background-size: cover;
+    background-image: url(./bg1.jpg);
+    font-family: "Libre Franklin", sans-serif;
+    background-position: center;
+    background-size: cover;
 }
 
 .container {
@@ -16,63 +17,75 @@ body {
     position: relative;
     border-radius: 8px;
 }
+
 .container .map {
-  width: 45%;
-  float: left;
+    width: 45%;
+    float: left;
 }
-.container .map .logo{
+
+.container .map .logo {
     width: 61%;
     padding-top: 25px;
     padding-left: 100px;
 }
-.container .map .agent{
+
+.container .map .agent {
     padding-left: 150px;
     padding-top: 30px;
     width: 350px;
 }
+
 .container .contact-form {
-  width: 53%;
-  margin-left: 2%;
-  float: left;
-}
-.container .contact-form .title {
-  font-size: 2.5em;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: 700;
-  color: #242424;
-  margin: 5% 8%;
-}
-.container .contact-form .subtitle {
-  font-size: 1.2em;
-  font-weight: 400;
-  margin: 0 4% 5% 8%;
+    width: 53%;
+    margin-left: 2%;
+    float: left;
 }
 
-.detail-section{
+.container .contact-form .title {
+    font-size: 2.5em;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 700;
+    color: #242424;
+    margin: 5% 8%;
+}
+
+.container .contact-form .subtitle {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 0 4% 5% 8%;
+}
+
+.detail-section {
     display: flex;
     justify-content: space-around;
 }
+
 .container .contact-form input,
 .container .contact-form textarea,
 .container .contact-form select {
     display: block;
     width: 240px;
     padding: 10px;
+    margin: 10px 30px;
     color: #242424;
     border: 1px solid #0c0c0c;
     background-color: transparent;
 
 }
+
 .container .contact-form input::placeholder,
 .container .contact-form textarea::placeholder {
-  color: #242424;
+    color: #242424;
 }
+
 .container .contact-form .btn-send {
-  background: #f8a50c;
-  width: 180px;
-  height: 60px;
-  color: #F8F8F8;
-  font-weight: 700;
-  margin: 2% 8%;
-  border: none;
+    background: #47f80c;
+    width: 480px;
+    height: 60px;
+    color: #F8F8F8;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 110px;
+    border-radius: 10px;
+    border: yellowgreen;
 }
