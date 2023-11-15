@@ -17,9 +17,11 @@
       <div class="contact-form">
         <h1 class="title">Citizen Finance Customer Query</h1>
         <h2 class="subtitle">We are here assist you. Please fill the form</h2>
-        <form action="https://computing-force-1133-dev-ed.scratch.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DH30000008d3w" method="POST">
-
-            <input type=hidden name="orgid" value="00DH30000008d3w">
+        <form
+          action="https://customization-innovatio-12d-dev-ed.scratch.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DH40000008eD3"
+          method="POST"
+        >
+          <input type="hidden" name="orgid" value="00DH40000008eD3" />
           <input
             type="hidden"
             name="retURL"
@@ -54,6 +56,47 @@
                 type="text"
               /><br />
 
+              <label for="type">Type</label
+              ><select id="type" name="type">
+                <option value="">--None--</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="Electrical">Electrical</option>
+                <option value="Electronic">Electronic</option>
+                <option value="Structural">Structural</option>
+                <option value="Other">Other</option></select
+              ><br />
+
+              <label for="reason">Case Reason</label
+              ><select id="reason" name="reason">
+                <option value="">--None--</option>
+                <option value="Account and Transaction Issues">
+                  Account and Transaction Issues
+                </option>
+                <option value="Loan and Credit Issues">
+                  Loan and Credit Issues
+                </option>
+                <option value="Fraud and Security">Fraud and Security</option>
+                <option value="Account Maintenance and Inquiries">
+                  Account Maintenance and Inquiries
+                </option>
+                <option value="Online Banking and ATM Issues">
+                  Online Banking and ATM Issues
+                </option>
+                <option value="Investment and Real Estate">
+                  Investment and Real Estate
+                </option>
+                <option value="Other">Other</option></select
+              ><br />
+
+              <label for="status">Status</label
+              ><select id="status" name="status">
+                <option value="">--None--</option>
+                <option value="Unallocated">Unallocated</option>
+                <option value="Allocated">Allocated</option>
+                <option value="Working">Working</option>
+                <option value="Escalated">Escalated</option>
+                <option value="Closed">Closed</option></select
+              ><br />
               <label for="subject">Subject</label
               ><input
                 id="subject"
